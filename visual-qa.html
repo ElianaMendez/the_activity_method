@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Asset Architecture QA</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f7f9fc;
+            color: #1a202c;
+            padding: 2rem;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .meta {
+            font-size: 0.875rem;
+            color: #4a5568;
+        }
+
+        .id-badge {
+            background: #e2e8f0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .expected {
+            font-family: monospace;
+            color: #2b6cb0;
+            word-break: break-all;
+            margin-bottom: 1rem;
+        }
+
+        .img-container {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #edf2f7;
+            border-radius: 4px;
+            min-height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .missing {
+            color: #e53e3e;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Activity Visual Constraints QA</h1>
+    <div class="grid" id="qa-grid"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const actRes = await fetch('activities.json');
+                const activities = await actRes.json();
+
+                const mapRes = await fetch(`assets/images/activity_visual_map.json?v=${Date.now()}`);
+                const visualMap = await mapRes.json();
+
+                const grid = document.getElementById('qa-grid');
+
+                activities.forEach(a => {
+                    const mapEntry = visualMap[a.activity_id];
+                    const expectedFile = mapEntry?.image_filename;
+                    const isApproved = mapEntry?.visual_status === 'APPROVED';
+                    const srcUrl = expectedFile ? `assets/images/${expectedFile}?v=${Date.now()}` : '';
+
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <div class="meta"><span class="id-badge">${a.activity_id}</span> - Status: <strong>${mapEntry?.visual_status || 'UNKNOWN'}</strong></div>
+                        <div class="title">${a.title}</div>
+                        <div class="expected">EXPECTED: ${expectedFile || 'N/A'}</div>
+                        <div class="img-container">
+                            ${(expectedFile && isApproved) ? `<img src="${srcUrl}" alt="Visual for ${a.activity_id}" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'missing\\'>IMAGE MISSING OR NOT APPROVED</span>';">` : '<span class="missing">PENDING_EXTERNAL_IMAGE</span>'}
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+            } catch (e) {
+                console.error(e);
+            }
+        });
+    </script>
+</body>
+
+</html>

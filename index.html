@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Activity Method&trade; — Professional Edition</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="container">
+      <h1 class="brand">THE ACTIVITY METHOD&trade;</h1>
+      <p class="tagline">Practical activities. Thoughtfully designed.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- WIZARD UI -->
+    <section id="wizard-section" class="wizard-container">
+      <h2 class="prompt-title">WHAT DO YOU NEED TODAY?</h2>
+      
+      <!-- Progress Indicator -->
+      <div class="progress-bar">
+        <div class="step-indicator active" data-step="1">1. Goal</div>
+        <div class="step-indicator" data-step="2">2. Participation</div>
+        <div class="step-indicator" data-step="3">3. Time</div>
+        <div class="step-indicator" data-step="4">4. Materials</div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="wizard-step active" id="step-1">
+        <h3>What would you like to work on?</h3>
+        <div class="options-grid" id="options-goal">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="wizard-step hidden" id="step-2">
+        <h3>How can they participate?</h3>
+        <p class="subtitle">Select the most accurate limitation or grouping.</p>
+        <div class="options-grid" id="options-participation">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="wizard-step hidden" id="step-3">
+        <h3>How much time do you have?</h3>
+        <div class="options-grid" id="options-time">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="wizard-step hidden" id="step-4">
+        <h3>What materials do you have available?</h3>
+        <p class="subtitle">Select any materials you have, or choose "No materials".</p>
+        <div class="options-grid materials-grid" id="options-materials">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="wizard-controls">
+        <button id="btn-back" class="btn btn-secondary hidden">Back</button>
+        <button id="btn-next" class="btn btn-primary disabled" disabled>Next</button>
+        <button id="btn-results" class="btn btn-primary hidden">Find Matches</button>
+      </div>
+    </section>
+
+    <!-- RESULTS UI -->
+    <section id="results-section" class="results-container hidden">
+      <div class="results-header">
+        <h2>YOUR BEST MATCHES</h2>
+        <button id="btn-modify-filters" class="btn btn-secondary btn-sm">Modify Filters</button>
+      </div>
+      <div id="results-grid" class="results-grid">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <!-- DETAIL VIEW UI -->
+    <section id="detail-section" class="detail-container hidden">
+      <div class="detail-header">
+        <button id="btn-back-results" class="btn btn-secondary btn-sm">&larr; Return to Matches</button>
+      </div>
+      <article id="activity-detail-content" class="activity-detail-content">
+        <!-- Populated by JS -->
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; The Activity Method&trade;</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

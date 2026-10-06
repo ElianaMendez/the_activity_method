@@ -1,0 +1,247 @@
+{
+  "mov_01": {
+    "activity_id": "mov_01",
+    "activity_title": "Seated Torso Twists",
+    "visual_status": "APPROVED",
+    "image_filename": "mov_01_seated_torso_twists.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "mov_02": {
+    "activity_id": "mov_02",
+    "activity_title": "Heel-to-Toe Walking Lines",
+    "visual_status": "APPROVED",
+    "image_filename": "mov_02_heel_to_toe_walking_lines.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "mov_03": {
+    "activity_id": "mov_03",
+    "activity_title": "Overhead Reach and Pull",
+    "visual_status": "APPROVED",
+    "image_filename": "mov_03_overhead_reach_and_pull.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "mov_04": {
+    "activity_id": "mov_04",
+    "activity_title": "Seated Marching",
+    "visual_status": "APPROVED",
+    "image_filename": "mov_04_seated_marching.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "mov_05": {
+    "activity_id": "mov_05",
+    "activity_title": "Dynamic Weight Shifts",
+    "visual_status": "APPROVED",
+    "image_filename": "mov_05_dynamic_weight_shifts.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "mov_06": {
+    "activity_id": "mov_06",
+    "activity_title": "Lower Body Rhythmic Taps",
+    "visual_status": "APPROVED",
+    "image_filename": "mov_06_lower_body_rhythmic_taps.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "bal_01": {
+    "activity_id": "bal_01",
+    "activity_title": "Clock Face Reaching",
+    "visual_status": "APPROVED",
+    "image_filename": "bal_01_clock_face_reaching.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "bal_02": {
+    "activity_id": "bal_02",
+    "activity_title": "Staggered Stance Practice",
+    "visual_status": "APPROVED",
+    "image_filename": "bal_02_staggered_stance_practice.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "bal_03": {
+    "activity_id": "bal_03",
+    "activity_title": "Bilateral Balloon Tap",
+    "visual_status": "APPROVED",
+    "image_filename": "bal_03_bilateral_balloon_tap.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "bal_04": {
+    "activity_id": "bal_04",
+    "activity_title": "Step Overs",
+    "visual_status": "APPROVED",
+    "image_filename": "bal_04_step_overs.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "bal_05": {
+    "activity_id": "bal_05",
+    "activity_title": "Household Target Toss",
+    "visual_status": "APPROVED",
+    "image_filename": "bal_05_household_target_toss.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "cog_01": {
+    "activity_id": "cog_01",
+    "activity_title": "Category Sorting (Tangible)",
+    "visual_status": "APPROVED",
+    "image_filename": "cog_01_category_sorting_tangible.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "cog_02": {
+    "activity_id": "cog_02",
+    "activity_title": "The Sequence Story",
+    "visual_status": "APPROVED",
+    "image_filename": "cog_02_the_sequence_story.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "cog_03": {
+    "activity_id": "cog_03",
+    "activity_title": "Everyday Object Alternative Uses",
+    "visual_status": "APPROVED",
+    "image_filename": "cog_03_everyday_object_alternative_uses.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "cog_04": {
+    "activity_id": "cog_04",
+    "activity_title": "Visual Matrix Scan",
+    "visual_status": "APPROVED",
+    "image_filename": "cog_04_visual_matrix_scan.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "cog_05": {
+    "activity_id": "cog_05",
+    "activity_title": "Recipe Outline",
+    "visual_status": "APPROVED",
+    "image_filename": "cog_05_recipe_outline.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "fin_01": {
+    "activity_id": "fin_01",
+    "activity_title": "Coin Translation Drop",
+    "visual_status": "APPROVED",
+    "image_filename": "fin_01_coin_translation_drop.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "fin_02": {
+    "activity_id": "fin_02",
+    "activity_title": "Dough Kneading and Shaping",
+    "visual_status": "APPROVED",
+    "image_filename": "fin_02_dough_kneading_and_shaping.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "fin_03": {
+    "activity_id": "fin_03",
+    "activity_title": "Nut and Bolt Assembly",
+    "visual_status": "APPROVED",
+    "image_filename": "fin_03_nut_and_bolt_assembly.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "fin_04": {
+    "activity_id": "fin_04",
+    "activity_title": "Paper Tearing Mosaic",
+    "visual_status": "APPROVED",
+    "image_filename": "fin_04_paper_tearing_mosaic.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "fin_05": {
+    "activity_id": "fin_05",
+    "activity_title": "Sorting Mail with Clips",
+    "visual_status": "APPROVED",
+    "image_filename": "fin_05_sorting_mail_with_clips.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "com_01": {
+    "activity_id": "com_01",
+    "activity_title": "Question Ball Toss",
+    "visual_status": "APPROVED",
+    "image_filename": "com_01_question_ball_toss.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "com_02": {
+    "activity_id": "com_02",
+    "activity_title": "Interview & Introduce",
+    "visual_status": "APPROVED",
+    "image_filename": "com_02_interview_and_introduce.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "com_03": {
+    "activity_id": "com_03",
+    "activity_title": "Shared Soundtrack",
+    "visual_status": "APPROVED",
+    "image_filename": "com_03_shared_soundtrack.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "com_04": {
+    "activity_id": "com_04",
+    "activity_title": "Collaborative Storytelling",
+    "visual_status": "APPROVED",
+    "image_filename": "com_04_collaborative_storytelling.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "adl_01": {
+    "activity_id": "adl_01",
+    "activity_title": "Clothing Fastener Station",
+    "visual_status": "APPROVED",
+    "image_filename": "adl_01_clothing_fastener_station.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "adl_02": {
+    "activity_id": "adl_02",
+    "activity_title": "Kitchen Reach and Retrieve",
+    "visual_status": "APPROVED",
+    "image_filename": "adl_02_kitchen_reach_and_retrieve.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "adl_03": {
+    "activity_id": "adl_03",
+    "activity_title": "Daily Routine Organizer",
+    "visual_status": "APPROVED",
+    "image_filename": "adl_03_daily_routine_organizer.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "adl_04": {
+    "activity_id": "adl_04",
+    "activity_title": "Seated Scooting Practice",
+    "visual_status": "APPROVED",
+    "image_filename": "adl_04_seated_scooting_practice.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "adl_05": {
+    "activity_id": "adl_05",
+    "activity_title": "Tabletop Laundry Folding",
+    "visual_status": "APPROVED",
+    "image_filename": "adl_05_tabletop_laundry_folding.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "cre_01": {
+    "activity_id": "cre_01",
+    "activity_title": "Life Journey Mapping",
+    "visual_status": "APPROVED",
+    "image_filename": "cre_01_life_journey_mapping.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "cre_02": {
+    "activity_id": "cre_02",
+    "activity_title": "Indoor Herb Planting",
+    "visual_status": "APPROVED",
+    "image_filename": "cre_02_indoor_herb_planting.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "cre_03": {
+    "activity_id": "cre_03",
+    "activity_title": "Audiobook and Color Sweep",
+    "visual_status": "APPROVED",
+    "image_filename": "cre_03_audiobook_and_color_sweep.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "cre_04": {
+    "activity_id": "cre_04",
+    "activity_title": "The \"Advice to My Younger Self\" Letter",
+    "visual_status": "APPROVED",
+    "image_filename": "cre_04_the_advice_to_my_younger_self_letter.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  },
+  "cre_05": {
+    "activity_id": "cre_05",
+    "activity_title": "Tactile Fabric Board Construction",
+    "visual_status": "APPROVED",
+    "image_filename": "cre_05_tactile_fabric_board_construction.png",
+    "image_source": "EXTERNAL_CHATGPT"
+  }
+}
